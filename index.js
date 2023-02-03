@@ -5,8 +5,8 @@ const app = express();
 app.use(express.json());
 
 const con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
+  host: "192.168.1.105",
+  user: "krrish",
   password: "131120",
   database: "company",
 });
@@ -110,4 +110,4 @@ app.delete("/Employees/delete/:id", (req, resp) => {
   });
 });
 
-app.listen(8000);
+app.listen(8520);
